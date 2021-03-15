@@ -4,7 +4,7 @@
 
   /* Spacing | Global */
   --space-unit: 1em;
-  --space-xs: calc(0.2 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
   --space-sm: calc(0.7 * var(--space-unit));
   --space-md: calc(1.25 * var(--space-unit));
   --space-lg: calc(2 * var(--space-unit));
@@ -20,8 +20,10 @@
   --color-grey-1: #333333;
   --color-grey-2: #828282;
   --color-grey-3: #BDBDBD;
-  --color-blue: #2F80ED;
-  --color-red: #EB5757;
+  --color-blue-1: #0039CB;
+  --color-blue-2: #2F80ED;
+  --color-red-1: #9A0007;
+  --color-red-2: #EB5757;
 }
 
 .App {
@@ -33,4 +35,25 @@
   font-weight: 700;
   font-size: var(--text-lg);
   text-align: center;
+}
+
+.App__button-wrapper {
+  overflow: hidden;
+  margin-top: var(--space-lg);
+}
+
+.App__button-wrapper > .btn {
+  float: right;
+}
+
+.App > .nav {
+  margin-bottom: var(--space-md);
+}
+
+.App > .list-header {
+  margin-bottom: var(--space-lg);
+}
+
+.material-icons {
+  font-size: 23px;
 }

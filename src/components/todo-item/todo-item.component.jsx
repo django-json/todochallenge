@@ -3,17 +3,24 @@ import classNames from "classnames";
 
 import "./todo-item.styles.css";
 
-const TodoItem = ({ item, variant }) => (
+import Button from "../button/button.component";
+
+const TodoItem = ({ item, id, variant, completed }) => (
 	<li className={classNames("todo-item")}>
 		{variant === "checkbox" && (
 			<span className="todo-item__context">
-				<input type="checkbox" value={item} id={`todo--${item}`} />
-				<label className="todo-item__label" htmlFor={`todo--${item}`}>
-					{item}
+				<label className="todo-item__label" htmlFor={`todo--${id}`}>
+					<input type="checkbox" value={item} id={`todo--${id}`} />
+					<span>{item}</span>
 				</label>
+				{completed && <Button iconAsLabel="delete_outline" />}
 			</span>
 		)}
 	</li>
 );
 
 export default TodoItem;
+
+TodoItem.defaultProps = {
+	completed: false,
+};

@@ -1,0 +1,9 @@
+.list-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.list-header > .input {
+	flex: 1;
+	margin-right: var(--space-lg);
+}

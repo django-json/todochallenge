@@ -1,0 +1,24 @@
+.input {
+	border: 1px solid var(--color-grey-3);
+	outline: none;
+	border-radius: 12px;
+	padding: var(--space-md);
+	padding-left: var(--space-sm);
+	font-family: inherit;
+	font-weight: 500;
+	font-size: var(--text-sm);
+}
+
+.input:hover,
+.input:focus {
+	border: 1px solid var(--color-blue-2);
+}
+
+.input::placeholder {
+	font-weight: 400;
+	color: var(--color-grey-2);
+}
+
+.input--fullwidth {
+	width: 100%;
+}

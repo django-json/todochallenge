@@ -1,14 +1,18 @@
 import React, { createElement } from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
+
+import "./list.styles.css";
 
 import TodoItem from "../todo-item/todo-item.component";
 
 const List = ({ items, itemRenderer, className, ...props }) => (
-	<ul className={("list", className)}>
+	<ul className={classNames("list", className)}>
 		{items.map((item, index) => {
 			// Set the new props to the item renderer
 			const newProps = Object.assign(
 				{ key: index },
+				{ id: index },
 				{ item },
 				{ ...props }
 			);
