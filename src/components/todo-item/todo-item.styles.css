@@ -1,0 +1,25 @@
+.todo-item {
+	font-weight: 500;
+	font-size: var(--text-md);
+	list-style: none;
+	color: var(--color-black);
+	padding: calc(var(--space-xs) * 2) 0;
+}
+
+.todo-item__context {
+	display: flex;
+	align-items: center;
+}
+
+.todo-item input {
+	width: 24px;
+	height: 24px;
+}
+
+.todo-item input:checked ~ label {
+	text-decoration: line-through;
+}
+
+.todo-item__label {
+	margin-left: var(--space-xs);
+}
