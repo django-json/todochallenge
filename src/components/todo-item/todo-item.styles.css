@@ -4,6 +4,7 @@
 	list-style: none;
 	color: var(--color-black);
 	margin: var(--space-md) 0;
+	overflow: hidden;
 }
 
 .todo-item__context,

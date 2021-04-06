@@ -10,8 +10,7 @@
 
 @media screen and (max-width: 767.98px) {
 	.list-header__form > .input {
-		margin-right: calc(var(--space-md) * 1.4);
-		padding: var(--space-xs) var(--space-sm);
+		margin-right: calc(var(--space-md) * 1.5);
 	}
 
 	.list-header__form .btn {
@@ -19,6 +18,6 @@
 	}
 
 	.list-header__form .btn--primary {
-		padding: 10px 26px;
+		padding: 14px 26px;
 	}
 }
