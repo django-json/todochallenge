@@ -39,8 +39,6 @@
 
 ![todo-screenshot](https://user-images.githubusercontent.com/44185999/113661994-c610ee00-96d9-11eb-8cda-a3739fb4147b.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
 - You can check the demo [here](https://todochallenge.netlify.app).
 - This challenge helped me refresh my mind to the things I have learned when handling routes using react-router-dom and I love designing this project especially the navigation bar.
 
