@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Todo Challenge</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://todochallenge.netlify.app">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/django-json/todochallenge">
       Solution
     </a>
     <span> | </span>
@@ -37,28 +37,33 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![todo-screenshot](https://user-images.githubusercontent.com/44185999/113661994-c610ee00-96d9-11eb-8cda-a3739fb4147b.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- You can check the demo [here](https://todochallenge.netlify.app).
+- This challenge helped me refresh my mind to the things I have learned when handling routes using react-router-dom and I love designing this project especially the navigation bar.
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [classnames](https://www.npmjs.com/package/classnames)
+- [prop-types](https://www.npmjs.com/package/prop-types)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 
 ## Features
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5) was to build an application to complete the given user stories:
+
+- [x] User story: I can add a new task
+- [x] User story: I can complete a task
+- [x] User story: I can toggle between All, Active and Completed
+- [x] User story: I can remove one or all tasks under the Completed tab
+- [x] User story (optional): Store the data in local storage that when I refresh the page I can still see my progress
 
 ## How To Use
 
@@ -68,7 +73,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/django-json/todochallenge
 
 # Install dependencies
 $ npm install
@@ -83,10 +88,12 @@ $ npm start
 
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [React](https://reactjs.org/)
+- [classnames](https://www.npmjs.com/package/classnames)
+- [prop-types](https://www.npmjs.com/package/prop-types)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [DevChallenges.io](https://devchallenges.io)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [django-json](https://github.com/django-json)
