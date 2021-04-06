@@ -8,6 +8,7 @@
   --space-sm: calc(0.7 * var(--space-unit));
   --space-md: calc(1.25 * var(--space-unit));
   --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3 * var(--space-unit));
 
   /* Font sizes | Global */
   --text-lg: 36px;
@@ -20,6 +21,7 @@
   --color-grey-1: #333333;
   --color-grey-2: #828282;
   --color-grey-3: #BDBDBD;
+  --color-grey-4: #A9A9A9;
   --color-blue-1: #0039CB;
   --color-blue-2: #2F80ED;
   --color-red-1: #9A0007;
@@ -28,6 +30,9 @@
 
 .App {
   font-family: var(--content-font);
+  min-height: 100vh;
+  padding: var(--space-sm);
+  position: relative;
 }
 
 .App__logo {
@@ -35,19 +40,27 @@
   font-weight: 700;
   font-size: var(--text-lg);
   text-align: center;
+  margin-top: 5px;
+}
+
+.App__logo > a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .App__button-wrapper {
-  overflow: hidden;
   margin-top: var(--space-lg);
-}
-
-.App__button-wrapper > .btn {
-  float: right;
+  margin-bottom: var(--space-xl);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .App > .nav {
   margin-bottom: var(--space-md);
+}
+
+.App > .list > li:last-child {
+  margin-bottom: var(--space-lg);
 }
 
 .App > .list-header {
@@ -56,4 +69,16 @@
 
 .material-icons {
   font-size: 23px;
+}
+
+@media screen and (max-width: 798.98px) {
+  :root {
+    /* Font Size | Global */
+    --text-md: 16px;
+    --text-sm: 12px;
+
+    /* Spacing | Global */
+    --space-md: var(--space-sm);
+    --space-lg: var(--space-md);
+  }
 }

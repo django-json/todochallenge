@@ -9,14 +9,15 @@ const Input = ({ className, fullWidth, placeholder, value, handleChange }) => (
 			"input--fullwidth": fullWidth,
 		})}
 		type="text"
+		value={value}
 		placeholder={placeholder}
 		onChange={handleChange}
+		autoFocus
 	/>
 );
 
 export default Input;
 
 Input.defaultProps = {
-	value: "",
 	handleChange: () => {},
 };

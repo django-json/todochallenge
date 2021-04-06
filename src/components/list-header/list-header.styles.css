@@ -1,9 +1,24 @@
-.list-header {
+.list-header__form {
 	display: flex;
 	justify-content: space-between;
 }
 
-.list-header > .input {
+.list-header__form > .input {
 	flex: 1;
 	margin-right: var(--space-lg);
+}
+
+@media screen and (max-width: 767.98px) {
+	.list-header__form > .input {
+		margin-right: calc(var(--space-md) * 1.4);
+		padding: var(--space-xs) var(--space-sm);
+	}
+
+	.list-header__form .btn {
+		font-size: 12px;
+	}
+
+	.list-header__form .btn--primary {
+		padding: 10px 26px;
+	}
 }

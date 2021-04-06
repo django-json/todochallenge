@@ -5,10 +5,17 @@ import "./list-header.styles.css";
 import Button from "../button/button.component";
 import Input from "../input/input.component";
 
-const ListHeader = () => (
+const ListHeader = ({ details, addItem, handleChange, handleSubmit }) => (
 	<div className="list-header">
-		<Input placeholder="add details" fullWidth />
-		<Button color="primary" label="Add" />
+		<form className="list-header__form" onSubmit={handleSubmit}>
+			<Input
+				value={details}
+				placeholder="add details"
+				fullWidth
+				handleChange={handleChange}
+			/>
+			<Button type="submit" color="primary" label="Add" />
+		</form>
 	</div>
 );
 

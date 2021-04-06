@@ -4,6 +4,7 @@ import classNames from "classnames";
 import "./button.styles.css";
 
 const Button = ({
+	type,
 	label,
 	iconAsLabel,
 	startIcon,
@@ -12,6 +13,7 @@ const Button = ({
 	handleClick,
 }) => (
 	<button
+		type={type}
 		className={classNames("btn", className, {
 			"btn--icon-only": iconAsLabel,
 			"btn--start-icon": startIcon,

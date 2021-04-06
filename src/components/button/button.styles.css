@@ -35,7 +35,7 @@
 
 /* Colors */
 .btn--primary {
-	padding: var(--space-md) calc(var(--space-lg) * 1.4);
+	padding: 16px 39px;
 	background: var(--color-blue-2);
 	box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
 	border-radius: 12px;

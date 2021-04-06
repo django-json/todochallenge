@@ -8,11 +8,10 @@ import TodoItem from "../todo-item/todo-item.component";
 
 const List = ({ items, itemRenderer, className, ...props }) => (
 	<ul className={classNames("list", className)}>
-		{items.map((item, index) => {
+		{items.map((item) => {
 			// Set the new props to the item renderer
 			const newProps = Object.assign(
-				{ key: index },
-				{ id: index },
+				{ key: item.key },
 				{ item },
 				{ ...props }
 			);

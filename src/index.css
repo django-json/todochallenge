@@ -13,15 +13,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-}
-
-body .App {
-  width: 610px;
+  max-width: 610px;
+  margin: 0 auto;
 }
 
 code {

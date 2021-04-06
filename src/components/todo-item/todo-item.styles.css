@@ -25,3 +25,10 @@
 .todo-item__label > input:checked ~ span {
 	text-decoration: line-through;
 }
+
+@media screen and (max-width: 798.98px) {
+	.todo-item__label > input {
+		width: 20px;
+		height: 20px;
+	}
+}
